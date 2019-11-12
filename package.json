@@ -1,0 +1,29 @@
+{
+  // search && replace packageName
+  "name": "packageName",
+  "version": "0.0.0",
+  "main": "dist/packageName-latest.js",
+  "scripts": {
+    "start": "rollup -c -w",
+    "prebuild": "python ../../scripts/buildCallback.py clean",
+    "build": "rollup -c",
+    "postbuild": "python ../../scripts/buildCallback.py",
+    "deploy": "sh ../../scripts/deploy.sh"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "rollup": "^1.11.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-svelte": "^5.0.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^3.2.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src"
+  ],
+  "dependencies": {}
+}
