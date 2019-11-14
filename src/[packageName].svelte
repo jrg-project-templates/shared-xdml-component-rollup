@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+
+export props: string = 'test'
 
 </script>
 

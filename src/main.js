@@ -1,5 +1,11 @@
-import PackageName from './packageName.svelte'
+import [PackageName] from './packageName.svelte'
 
-window.shared = {PackageName, ...window.shared}
+declare global {
+    interface Window {
+        shared: any;
+    }
+}
 
-export default PackageName
+window.shared = { [PackageName], ...window.shared }
+
+export default [PackageName]
