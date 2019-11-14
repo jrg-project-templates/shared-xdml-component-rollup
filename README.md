@@ -1,8 +1,8 @@
 # XDML - shared组件 rollup版本的工程模板
 
 使用了：
-    - svelte配合typescript编写组件内容
-    - Jest配合svelte-testing-library做测试
+   - svelte配合typescript编写组件内容
+   - Jest配合svelte-testing-library做测试
 
 ## usage
 
