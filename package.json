@@ -7,6 +7,7 @@
     "start": "rollup -c -w",
     "prebuild": "node ../../scripts/buildCallback.js clean",
     "build": "rollup -c",
+    "build:prod": "cross-env NODE_ENV=prod yarn build",
     "postbuild": "node ../../scripts/buildCallback.js",
     "deploy": "sh ../../scripts/deploy.sh"
   },
