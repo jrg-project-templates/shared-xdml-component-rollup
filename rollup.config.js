@@ -36,11 +36,12 @@ export default {
   ],
   plugins: [
     svelte({
-			preprocess: [
-				scss({}),
-        preprocess(opts)
-			],
-		}),
+	preprocess: [
+	    scss({}),
+	    preprocess(opts)
+        ],
+        accessors: true
+    }),
     resolve(),
     typescript(),
     production && terser()
