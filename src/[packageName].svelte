@@ -1,6 +1,6 @@
 <script lang="ts">
 
-export props: string = 'test'
+export let props: string = 'test'
 
 </script>
 
